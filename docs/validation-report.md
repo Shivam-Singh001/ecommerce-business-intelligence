@@ -20,6 +20,7 @@ The reproducible pipeline completed successfully and generated cleaned CSVs, `da
 | Average delivery duration | 12.5582 days |
 | Python versus SQLite | Exact match for delivered-order count, payment revenue, and average delivery duration |
 | Automated unit tests | 3 passed, 0 failed |
+| Documented SQL queries | 5 executed successfully against `data/olist_analytics.sqlite` |
 
 Expected missingness was retained rather than imputed: 2,965 orders lack a customer-delivery timestamp (for example, non-delivered orders) and 610 products lack a category. Review score has no missing values in the local file.
 
@@ -44,7 +45,7 @@ Expected missingness was retained rather than imputed: 2,965 orders lack a custo
 
 ## Remaining manual validation
 
-- [ ] Build and save the Power BI `.pbix` file locally using the dashboard guide.
+- [ ] Build and save the Power BI `.pbix` file locally using the dashboard guide. Power BI Desktop was not available in the macOS validation environment, so no `.pbix` was created or checked.
 - [ ] Reconcile the Power BI cards against the three expected values in `docs/power-bi-guide.md` with filters cleared.
 - [ ] Add dashboard screenshots and a short conclusion to the final college report/presentation.
 - [x] Keep raw CSVs, generated database/outputs, virtual environment, and secrets out of Git.

@@ -25,7 +25,7 @@ FROM vw_order_summary
 WHERE order_status = 'delivered' AND order_delivered_customer_date IS NOT NULL;
 
 -- 4. Top categories by delivered-order merchandise value (freight excluded).
-SELECT COALESCE(t.product_category_name_english, i.product_category_name, 'unclassified') AS category,
+SELECT COALESCE(t.product_category_name_english, p.product_category_name, 'unclassified') AS category,
        COUNT(*) AS units_sold, ROUND(SUM(i.price), 2) AS product_gmv
 FROM items i
 JOIN orders o ON o.order_id = i.order_id

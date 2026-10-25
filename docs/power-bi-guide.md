@@ -1,6 +1,6 @@
 # Power BI dashboard guide
 
-No `.pbix` file has been created yet. This guide prepares a beginner to build one from the verified local outputs.
+No `.pbix` file has been created yet. Power BI Desktop was not available in the macOS validation environment, so this guide prepares a beginner to build one from the verified local outputs on a computer with Power BI Desktop.
 
 ## 1. Generate and import the data
 
