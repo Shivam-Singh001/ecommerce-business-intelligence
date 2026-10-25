@@ -1,0 +1,17 @@
+# Source data and reproducible outputs are not stored in Git.
+data/*.csv
+data/processed/
+data/*.sqlite
+data/*.db
+reports/generated/
+
+# Local environments, notebook checkpoints, and editor/system files.
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.env
