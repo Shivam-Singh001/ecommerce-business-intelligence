@@ -59,9 +59,24 @@ The first command generates ignored, reproducible outputs:
 - Delivery metrics include only delivered orders with the timestamps needed for the calculation.
 - Missing product categories are retained as missing rather than guessed. Exact duplicate geolocation rows are removed because they are repeated coordinate records, while the original raw CSV is left unchanged.
 
-## Power BI hand-off
+## Power BI Dashboard
 
-No `.pbix` file exists in this repository. Import `data/processed/order_summary.csv` after running the pipeline, then follow [docs/power-bi-guide.md](docs/power-bi-guide.md). Reconcile the visual values with the SQL before presenting the dashboard.
+The interactive dashboard is available on Power BI Service.
+
+[**Open E-Commerce Business Intelligence Dashboard**](https://app.powerbi.com/groups/me/reports/fe30dae6-9a8b-4f72-a0e7-45a8ee957649/91c256d171b6dea3d6a9?experience=power-bi)
+
+The dashboard includes:
+
+- Delivered payment revenue
+- Delivered order count
+- Average delivery duration
+- Late delivered orders
+- Monthly revenue trends
+- Top 10 customer states by revenue
+- Delivered orders by review score
+
+*Note: Access to the interactive report may require signing in to Power BI with an authorized account. The report is hosted on Power BI Service; a `.pbix` file is not currently included in this repository.*
+
 
 ## Safe version control
 
